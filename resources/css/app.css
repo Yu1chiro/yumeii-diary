@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Tailwind v4 Custom Theme */
+@theme {
+  --color-pinky: #F8BBD0;
+  --color-cream: #FFF8F0;
+  --color-lavender: #E6D6FF;
+  --color-mint: #D7FBE8;
+  --color-text: #5A4A4A;
+  
+  --font-sans: 'Quicksand', sans-serif;
+  --font-hand: 'Caveat', cursive;
+  
+  --shadow-soft: 0 10px 40px -10px rgba(248,187,208,0.5);
+}
+
+/* Wajib ditambahkan di Tailwind v4 agar toggle manual class="dark" berfungsi */
+@custom-variant dark (&:is(.dark *));
